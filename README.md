@@ -205,6 +205,14 @@ npm test            # vitest run
 npm run verify      # smoke-test both ESM and CJS builds
 ```
 
+## Links
+
+- [Official Website](https://www.powerduck.com/opensource/openapi-parser.html)
+- [Documentation](https://www.powerduck.com/docs/openapi-parser/introduction/)
+- [Live Demo](https://www.powerduck.com/demo/openapi-parser)
+- [GitHub](https://github.com/powerducklab/openapi-parser)
+- [npm](https://www.npmjs.com/package/@powerduck/openapi-parser)
+
 ## License
 
 MIT
