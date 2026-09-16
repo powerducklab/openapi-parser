@@ -244,7 +244,7 @@ const deepCopy = (document: Record<string, unknown>): Record<string, unknown> =>
  *
  * @example
  * ```ts
- * import { upgradeOasTo32, isOpenApiUpgradeError } from "@powerduckie/openapi-parser";
+ * import { upgradeOasTo32, isOpenApiUpgradeError } from "@powerduck/openapi-parser";
  *
  * // From a parsed object
  * const doc32 = await upgradeOasTo32(specObject);

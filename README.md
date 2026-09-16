@@ -1,5 +1,9 @@
 # @powerduck/openapi-parser
 
+[![npm version](https://img.shields.io/npm/v/@powerduck/openapi-parser)](https://www.npmjs.com/package/@powerduck/openapi-parser)
+[![license](https://img.shields.io/npm/l/@powerduck/openapi-parser)](https://github.com/powerducklab/openapi-parser/blob/main/LICENSE)
+[![website](https://img.shields.io/badge/website-powerduck.com-blue)](https://www.powerduck.com/)
+
 Upgrade any OpenAPI document — Swagger 2.0, OpenAPI 3.0, 3.1, or 3.2 — to
 OpenAPI 3.2, in one call.
 
