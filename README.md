@@ -219,3 +219,7 @@ MIT
 
 [parser]: https://github.com/scalar/openapi-parser
 [upgrader]: https://github.com/scalar/openapi-parser/tree/main/packages/openapi-upgrader
+
+## 0.3.8 — Circular-input handling
+
+The upgrade guard now detects self-referential arrays as well as objects before calling the underlying validator. Such inputs reject with `CIRCULAR_REFERENCE`; repeated acyclic references remain supported.

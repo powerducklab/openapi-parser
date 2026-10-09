@@ -874,3 +874,9 @@ describe("public surface", () => {
     expect(UpgradeErrorCode.CircularReference).toBe("CIRCULAR_REFERENCE");
   });
 });
+
+it("rejects self-referential arrays before invoking the validator", async () => {
+  const array: unknown[] = []; array.push(array);
+  await expect(upgradeOasTo32({...oas30, "x-cycle":array} as any)).rejects.toMatchObject({code:UpgradeErrorCode.CircularReference});
+  expect(harness.validateCalls).toHaveLength(0);
+});

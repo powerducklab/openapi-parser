@@ -154,6 +154,12 @@ const assertNoCircularReference = (
   const push = (value: unknown, depth: number): void => {
     if (depth > maxDepth) return;
     if (Array.isArray(value)) {
+      if (onPath.has(value)) {
+        throw new OpenApiUpgradeError(
+          UpgradeErrorCode.CircularReference,
+          "The input document contains a circular array reference.",
+        );
+      }
       onPath.add(value);
       stack.push([value, depth, null, 0]);
     } else if (isPlainObject(value)) {
