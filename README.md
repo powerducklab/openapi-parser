@@ -223,3 +223,7 @@ MIT
 ## 0.3.8 — Circular-input handling
 
 The upgrade guard now detects self-referential arrays as well as objects before calling the underlying validator. Such inputs reject with `CIRCULAR_REFERENCE`; repeated acyclic references remain supported.
+
+### HTTP methods
+
+`@powerduck/openapi-parser/methods` is a lightweight ESM/CJS entry point (no parser or Node imports). It exports `HTTP_METHODS` presets, RFC-token validation (`isHttpMethod`), `OPENAPI_METHODS` (including QUERY), and `operationEntries`, `getOperation`, `setOperation`, `deleteOperation`, `operationPath` helpers. Custom methods are stored in OpenAPI 3.2 `additionalOperations`; metadata such as `parameters` is never treated as an operation. Set the document version to 3.2 when adding QUERY or custom methods. Transport restrictions still apply (for example, browser Fetch cannot send CONNECT or TRACE).

@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 const shared = {
-  entry: { index: "src/index.ts" },
+  entry: { index: "src/index.ts", methods: "src/http-methods.ts" },
   target: "node18",
   platform: "node" as const,
   sourcemap: false,
