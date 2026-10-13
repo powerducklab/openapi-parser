@@ -28,7 +28,7 @@ single, predictable shape with a machine-readable error code.
 npm install @powerduck/openapi-parser
 ```
 
-Requires Node.js 18 or later.
+Requires Node.js 22 or later.
 
 ## Usage
 
